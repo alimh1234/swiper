@@ -29,7 +29,7 @@ const Coverflow = {
       if (typeof stretch === 'string' && stretch.indexOf('%') !== -1) {
         stretch = (parseFloat(params.stretch) / 100) * slideSize;
       }
-      let translateY = isHorizontal ? 0 : stretch * offsetMultiplier;
+      let translateY = isHorizontal ? 250 : stretch * offsetMultiplier;
       let translateX = isHorizontal ? stretch * offsetMultiplier : 0;
 
       let scale = 1 - (1 - params.scale) * Math.abs(offsetMultiplier);
